@@ -19,7 +19,7 @@ namespace WPFAppCore
         private async void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
             manager = await UpdateManager
-                .GitHubUpdateManager(@"https://github.com/meJevin/WPFCoreTest");
+                .GitHubUpdateManager(@"https://github.com/PawelSpionkowskiAdriaGames/LauncherTest/releases");
 
             CurrentVersionTextBox.Text = manager.CurrentlyInstalledVersion().ToString();
 
