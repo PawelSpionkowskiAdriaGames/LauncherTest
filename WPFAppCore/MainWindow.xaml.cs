@@ -19,7 +19,7 @@ namespace WPFAppCore
         private async void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
             manager = await UpdateManager
-                .GitHubUpdateManager(@"https://github.com/PawelSpionkowskiAdriaGames/LauncherTest/releases");
+                .GitHubUpdateManager(@"https://github.com/PawelSpionkowskiAdriaGames/LauncherTest");
 
             CurrentVersionTextBox.Text = manager.CurrentlyInstalledVersion().ToString();
 
@@ -47,6 +47,11 @@ namespace WPFAppCore
             var currentExecutablePath = Process.GetCurrentProcess().MainModule.FileName;
             Process.Start(currentExecutablePath);
             Application.Current.Shutdown();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

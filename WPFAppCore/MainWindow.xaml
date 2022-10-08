@@ -25,7 +25,7 @@
             <Button Click="CheckForUpdatesButton_Click">
                 Check
             </Button>
-            <Button Content="New Feature!" Height="62" Width="100"/>
+            <Label Content="First Version!"/>
         </StackPanel>
     </Grid>
 </Window>
